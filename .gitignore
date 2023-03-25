@@ -1,2 +1,5 @@
 .DS_Store
 docker-compose.yaml
+venv
+hints.md
+.env
