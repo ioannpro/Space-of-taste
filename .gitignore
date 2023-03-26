@@ -1,5 +1,7 @@
-.DS_Store
-docker-compose.yaml
 venv
+.DS_Store
+__pycache__
+*.log
+docker-compose.yaml
 hints.md
 .env
