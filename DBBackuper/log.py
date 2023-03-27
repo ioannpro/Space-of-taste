@@ -4,7 +4,8 @@ import logging
 
 # Setup
 
-FORMAT = '[%(asctime)s] %(name)s %(levelname)s: %(message)s'
+FORMAT = '[%(asctime)s] %(levelname)s: %(message)s'
+# FORMAT = '\033[32m[%(asctime)s]' + ' %(name)s'
 logging.basicConfig(format=FORMAT, level=logging.DEBUG)
 
 # Create Handler
@@ -60,10 +61,12 @@ logger.addHandler(error_handler)
 
 
 def main():
+    logger.info('Started')
+    
     logger.debug('BuuuuuuuuuG')
     logger.warning('Protocol problem: %s', 'connection reset')
-
-    logger.info('Started')
+    logger.error('EEErrroooRRR')
+    
     logger.info('Finished')
 
 if __name__ == '__main__':
