@@ -5,6 +5,10 @@ import os
 import datetime
 
 
+def start():
+    
+    pass
+
 def dump_database(CONTAINER_NAME, DB_HOSTNAME, DB_USER, DB_NAME):
 
     filename = f'/temp/DB_{DB_NAME}_dump_{datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")}'
@@ -13,7 +17,10 @@ def dump_database(CONTAINER_NAME, DB_HOSTNAME, DB_USER, DB_NAME):
     dump_status = os.WEXITSTATUS(os.system(f'docker exec -it {CONTAINER_NAME} pg_dump -h {DB_HOSTNAME} -U {DB_USER} {DB_NAME} | gzip -c --best | '))
 
     if dump_status != 0:
-        logger.error('er')
+        logger.error('Dump failed')
+        logger.error(f'Code error: {dump_status}')
+        
+        
 
     elif dump_status == 0:
         logger.info(f'Finish dump {DB_NAME}')

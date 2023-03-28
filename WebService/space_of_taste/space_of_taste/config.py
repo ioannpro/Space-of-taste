@@ -12,11 +12,11 @@ env.read_env()
 # Recording data from environment variables
 
 IP = env.str("ip") # IP Database
+PORT = env.int("port")
+DB_NAME = env.str("db_name")
+DB_USER = env.str("db_user")
+DB_PASSWORD = env.str("db_password")
 
-# Dir
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-log_dir = f'{BASE_DIR}/DBBackuper'
 
 
 if __name__ == '__main__':
