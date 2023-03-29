@@ -3,4 +3,12 @@ from log import logger
 from backup import *
 
 
-logger.info('Start work...')
+def main():
+
+    logger.info('Start work...')
+    start('/Users/ioann/Desktop/path/')
+
+
+
+if __name__ == '__main__':
+    main()
