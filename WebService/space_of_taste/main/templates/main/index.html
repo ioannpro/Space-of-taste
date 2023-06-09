@@ -1,0 +1,27 @@
+{% extends 'structure.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Intro -->
+
+<div class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <div class="intro__text">
+                <h1 class="intro__tittle">Space Of Taste</h1>
+                <p class="intro__subtittle">An online delivery store where you can find all possible options to satisfy your gourmet taste.</p>
+                <p class="intro__subsub">Whether you're in the mood for something sweet or savory, our fast food menu has got you covered with delicious snacks and desserts to satisfy any craving.</p>
+                <div class="intro__btn">
+                    <a href="#" class="btn btn-gold-intro">Menu</a>
+                </div>
+            </div>
+            <div class="intro__img">
+                <img id="intro-pizza" src="{% static 'main/images/intro-pizza.jpg' %} " alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

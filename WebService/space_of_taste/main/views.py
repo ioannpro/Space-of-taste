@@ -7,7 +7,11 @@ def main_page(request):
     category = request.GET.get("cat")
     sort = request.GET.get("sort")
 
+    data = {
+        'title': 'Space Of Taste'
+        }
+
     if category != None:
         category = "All"
 
-    return HttpResponse(f'<h1>Sort: {sort}, Category: {category}</h1>')
+    return render(request, 'main/index.html', data)
