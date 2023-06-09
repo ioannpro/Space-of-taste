@@ -2,6 +2,10 @@
 
 {% load static %}
 
+{% block svg %}
+
+{% endblock %}
+
 {% block content %}
 
 <!-- Intro -->
@@ -23,5 +27,51 @@
         </div>
     </div>
 </div>
+
+<!-- Menu -->
+
+<div class="menu">
+    <div class="container">
+        <div class="category">
+            <nav class="category__inner">
+                <a href="#" class="category__a">
+                    <svg class="category__icon">
+                        <use xlink:href="#pizza"></use>
+                    </svg>
+                </a>
+                <a href="#" class="category__a">
+                    <svg class="category__icon">
+                        <use xlink:href="#desserts"></use>
+                    </svg>
+                </a>
+                <a href="#" class="category__a">
+                    <svg class="category__icon">
+                        <use xlink:href="#desserts"></use>
+                    </svg>
+                </a>
+                <a href="#" class="category__a">
+                    <svg class="category__icon">
+                        <use xlink:href="#desserts"></use>
+                    </svg>
+                </a>
+                <a href="#" class="category__a">
+                    <svg class="category__icon">
+                        <use xlink:href="#desserts"></use>
+                    </svg>
+                </a>
+                <a href="#" class="category__a">
+                    <svg class="category__icon">
+                        <use xlink:href="#desserts"></use>
+                    </svg>
+                </a>
+            </nav> <!-- ./category__inner -->
+        </div> <!-- ./category -->
+        <div class="menu__sort">
+
+        </div>
+        <div class="menu__inner">
+        </div>
+    </div> <!-- ./container -->
+</div> <!-- ./menu -->
 
 {% endblock %}
