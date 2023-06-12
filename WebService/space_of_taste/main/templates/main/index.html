@@ -4,6 +4,12 @@
 
 {% block svg %}
 
+{% for cat in category %}
+{% autoescape off %}
+    {{ cat.icon }}
+{% endautoescape %}
+{% endfor %}
+
 {% endblock %}
 
 {% block content %}
