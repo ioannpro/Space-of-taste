@@ -17,8 +17,3 @@ class Dish(models.Model):
 
 
 
-
-
-
-
-
